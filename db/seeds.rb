@@ -9,5 +9,8 @@ Dictionary.create!([
   { word: "Tea", meaning: "Gossip or the latest news and drama." },
   { word: "Yeet", meaning: "A term used to express excitement or to throw something with force." },
   { word: "Vibe", meaning: "Refers to the mood or atmosphere of a place or situation, or someone’s energy." },
+  { word: "imo", meaning: "In my opinion." },
+  { word: "nvm", meaning: "Never mind." },
+  { word: "sup", meaning: "Whats up!." },
   { word: "GOAT", meaning: "Acronym for Greatest of All Time." }
 ])
