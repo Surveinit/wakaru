@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root("word_lookup#index")
 
-  get("admin", to: "admin#index")
+  get("admin", to: "admin#add")
 end

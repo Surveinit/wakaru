@@ -1,0 +1,15 @@
+<div class="container">
+  <h1 class="title">Wakaru!</h1>
+
+  <%= form_with url: admin_path, method: :get, local: true do |form|%>
+    <span class="form-group">
+      <%= form.label :word, "Word:", class: "form-label" %>
+      <%= form.text_field :word, class: "form-textfield", autocomplete: "off"%>
+      <br>
+      <%= form.label :meaning, "Meaning:", class: "form-label" %>
+      <%= form.text_field :meaning, class: "form-textfield", autocomplete: "off"%>
+      <br>
+    </span>
+    <%= form.submit"Insert", class: "btn-lookup" %>
+  <% end %>
+</div>
