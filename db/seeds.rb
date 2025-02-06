@@ -1,9 +1,13 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+Dictionary.create!([
+  { word: "Rizz", meaning: "Rizz is a slang term that means style, charm, or attractiveness, and the ability to attract a romantic or sexual partner." },
+  { word: "Sus", meaning: "Short for suspicious or suspect, often used to indicate something is questionable or shady." },
+  { word: "No Cap", meaning: "Means no lie or for real; used to emphasize that someone is telling the truth." },
+  { word: "Drip", meaning: "Refers to stylish or trendy clothing and accessories." },
+  { word: "Lit", meaning: "Used to describe something exciting, fun, or amazing." },
+  { word: "Slay", meaning: "To do something exceptionally well or look amazing." },
+  { word: "Stan", meaning: "A combination of 'stalker' and 'fan'; used to describe someone who is an obsessive fan of something." },
+  { word: "Tea", meaning: "Gossip or the latest news and drama." },
+  { word: "Yeet", meaning: "A term used to express excitement or to throw something with force." },
+  { word: "Vibe", meaning: "Refers to the mood or atmosphere of a place or situation, or someone’s energy." },
+  { word: "GOAT", meaning: "Acronym for Greatest of All Time." }
+])
