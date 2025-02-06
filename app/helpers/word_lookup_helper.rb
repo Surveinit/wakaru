@@ -1,0 +1,2 @@
+module WordLookupHelper
+end
