@@ -1,5 +1,5 @@
 class Dictionary < ApplicationRecord
   def self.find_meaning(word)
-    find_by(word: word)&.meaning || "Meaning not found!"
+    find_by("word ILIKE ?", word)&.meaning || "Meaning not found!"
   end
 end
