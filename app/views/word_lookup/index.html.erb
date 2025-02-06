@@ -1,9 +1,11 @@
-<h1>Wakaru</h1>
+<h1 class="title">Wakaru</h1>
 
 <%= form_with url: word_lookup_index_path, method: :get, local: true do |form|%>
-  <%= form.label(:word, "Enter a word:") %>
-  <%= form.text_field(:word, placeholder: "eg: 'Rizz'") %>
-  <%= form.submit("Lookup") %>
+  <span class="form-group">
+    <%= form.label :word, "Enter a word:", class: "form-label" %>
+    <%= form.text_field :word, placeholder: "eg: 'Rizz'", class: "form-control" %>
+  </span>
+  <%= form.submit"Lookup", class: "btn-lookup" %>
 <% end %>
 
 <% if @word.present? %>
