@@ -1,14 +1,16 @@
-<h1 class="title">Wakaru</h1>
+<div class="container">
+  <h1 class="title">Wakaru!</h1>
 
-<%= form_with url: word_lookup_index_path, method: :get, local: true do |form|%>
-  <span class="form-group">
-    <%= form.label :word, "Enter a word:", class: "form-label" %>
-    <%= form.text_field :word, placeholder: "eg: 'Rizz'", class: "form-control" %>
-  </span>
-  <%= form.submit"Lookup", class: "btn-lookup" %>
-<% end %>
+  <%= form_with url: word_lookup_index_path, method: :get, local: true do |form|%>
+    <span class="form-group">
+      <%# <%= form.label :word, "Enter a word:", class: "form-label" %1> %>
+      <%= form.text_field :word, placeholder: "eg: 'Rizz'", class: "form-control" %>
+    </span>
+    <%= form.submit"Lookup", class: "btn-lookup" %>
+  <% end %>
 
-<% if @word.present? %>
-  <h3>Meaning for "<%= @word %>"</h3>
-  <p><%= @meaning %></p>
-<% end %>
+  <% if @word.present? %>
+    <h3>"<%= @word %>" stands for</h3>
+    <p class="meaning-text"><%= @meaning %></p>
+  <% end %>
+</div>
